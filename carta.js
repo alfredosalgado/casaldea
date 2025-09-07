@@ -129,7 +129,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const initializeMenu = () => {
+    // Check for URL hash to determine initial category
+    let hash = window.location.hash.substring(1); // Remove the #
+    
+    // Decode URL component to handle special characters like ñ
+    if (hash) {
+        hash = decodeURIComponent(hash);
+    }
+    
+    if (hash && menuData[hash]) {
+        currentCategory = hash;
+    }
+    
     renderMenuItems(currentCategory);
+    
+    // Update active tab and section if category was changed from hash
+    if (hash && menuData[hash]) {
+        switchCategory(currentCategory);
+    }
 };
 
 const setupEventListeners = () => {
