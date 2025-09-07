@@ -27,6 +27,15 @@ body {
 .mobile-header-section {
     display: none;
     background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.mobile-header-section.navbar-hidden {
+    transform: translateY(-100%);
 }
 
 .mobile-container {
@@ -100,12 +109,28 @@ body {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
+/* Sticky Controls Container */
+.sticky-controls {
+    position: sticky;
+    top: 80px; /* Height of navbar */
+    background: var(--primary-color);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s ease;
+}
+
+.sticky-controls.navbar-hidden {
+    top: 0;
+}
+
 /* Category Tabs */
 .category-tabs {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     flex-wrap: wrap;
 }
 
@@ -132,8 +157,8 @@ body {
 }
 
 .category-tab.active {
-    background: #004499;
-    box-shadow: 0 4px 15px rgba(2, 118, 255, 0.3);
+    background: #ff1b00;
+    box-shadow: 0 4px 15px rgba(248, 248, 248, 0.3);
 }
 
 /* View toggle */
@@ -141,7 +166,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .toggle-btn {
@@ -475,6 +500,20 @@ body {
         font-size: 2rem;
     }
     
+    .sticky-controls {
+        top: 170px; /* Adjusted for mobile navbar height - increased to avoid overlap */
+        padding: 0.75rem 0;
+    }
+    
+    .menu-content {
+        margin-top: 2rem;
+        padding-top: 80px; /* Extra space to avoid overlap with sticky buttons */
+    }
+    
+    .sticky-controls.navbar-hidden {
+        top: 0;
+    }
+    
     .category-nav {
         gap: 0.5rem;
         margin-bottom: 1.5rem;
@@ -486,7 +525,7 @@ body {
     }
     
     .view-toggle {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
     
     .toggle-btn {
@@ -529,14 +568,30 @@ body {
         font-size: 1.75rem;
     }
     
-    .category-nav {
+    .sticky-controls {
+        padding: 0.5rem 0;
+    }
+    
+    .category-tabs {
         flex-direction: column;
         align-items: center;
+        gap: 0.5rem;
     }
     
     .category-tab {
         width: 200px;
         text-align: center;
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .view-toggle {
+        margin-bottom: 0.75rem;
+    }
+    
+    .toggle-btn {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.75rem;
     }
 }
 

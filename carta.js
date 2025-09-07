@@ -125,6 +125,7 @@ let expandedCard = null;
 document.addEventListener('DOMContentLoaded', () => {
     initializeMenu();
     setupEventListeners();
+    setupScrollBehavior();
 });
 
 const initializeMenu = () => {
@@ -167,6 +168,18 @@ const switchCategory = (category) => {
     currentCategory = category;
     expandedCard = null; // Reset expanded card when switching categories
     renderMenuItems(category);
+    
+    // Apply current view state after rendering
+    const gridView = document.getElementById(`${category}-grid`);
+    const listView = document.getElementById(`${category}-list`);
+    
+    if (currentView === 'grid') {
+        gridView.classList.remove('hidden');
+        listView.classList.add('hidden');
+    } else {
+        gridView.classList.add('hidden');
+        listView.classList.remove('hidden');
+    }
 };
 
 const switchView = (view) => {
@@ -275,6 +288,56 @@ const toggleCard = (cardId) => {
 window.addEventListener('resize', () => {
     renderMenuItems(currentCategory);
 });
+
+// Scroll behavior for navbar hide/show
+const setupScrollBehavior = () => {
+    let lastScrollTop = 0;
+    let isScrolling = false;
+    const navbar = document.querySelector('.navbar');
+    const mobileHeader = document.querySelector('.mobile-header-section');
+    const stickyControls = document.querySelector('.sticky-controls');
+    
+    const handleScroll = () => {
+        if (isScrolling) return;
+        
+        isScrolling = true;
+        requestAnimationFrame(() => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollDelta = scrollTop - lastScrollTop;
+            
+            // Solo actuar si el scroll es significativo (más de 5px)
+            if (Math.abs(scrollDelta) > 5) {
+                if (scrollDelta > 0 && scrollTop > 100) {
+                    // Scrolling down - hide navbar
+                    if (navbar) navbar.classList.add('navbar-hidden');
+                    if (mobileHeader) mobileHeader.classList.add('navbar-hidden');
+                    if (stickyControls) stickyControls.classList.add('navbar-hidden');
+                } else if (scrollDelta < 0) {
+                    // Scrolling up - show navbar
+                    if (navbar) navbar.classList.remove('navbar-hidden');
+                    if (mobileHeader) mobileHeader.classList.remove('navbar-hidden');
+                    if (stickyControls) stickyControls.classList.remove('navbar-hidden');
+                }
+                
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            }
+            
+            isScrolling = false;
+        });
+    };
+    
+    // Throttled scroll event
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                handleScroll();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+};
 
 // Mobile menu functionality is already handled by script.js
 // No need to redeclare it here
