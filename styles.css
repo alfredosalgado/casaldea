@@ -24,7 +24,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    
+    background-color: var(--primary-color);
     padding: 1rem 0;
     position: fixed;
     top: 0;
@@ -311,10 +311,16 @@ body {
     
     .mobile-hero-content {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: calc(100vh - 180px);
+        padding: 2rem 0;
     }
     
     .mobile-burger-image {
-        margin-bottom: 2rem;
+        margin-bottom: 0;
+        flex-shrink: 0;
     }
     
     .mobile-burger-img {
@@ -334,9 +340,9 @@ body {
             transparent 4px
         );
         padding: 1.5rem;
-        margin-top: 5rem;
-        margin-bottom: 2rem;
+        margin: 0;
         border: 2px solid var(--text-light);
+        flex-shrink: 0;
     }
     
     .mobile-hero-badge h2 {
@@ -351,8 +357,9 @@ body {
     
     .mobile-hero-description {
         color: var(--text-light);
-        margin-bottom: 2rem;
+        margin: 0;
         padding: 0 1rem;
+        flex-shrink: 0;
     }
     
     .mobile-hero-description p {

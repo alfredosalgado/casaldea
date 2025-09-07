@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUNDRED - Carta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logonavbar.png" alt="HUNDRED" class="logo-image">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">INICIO</a>
+                <a href="carta.html" class="nav-link active">CARTA</a>
+                <a href="#" class="nav-link">NOSOTROS</a>
+                <a href="#" class="nav-link">CONTACTO</a>
+            </div>
+            <div class="nav-toggle">
+                <div class="hamburger-icon">
+                    <span class="bun-top"></span>
+                    <span class="meat"></span>
+                    <span class="bun-bottom"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Header -->
+    <section class="mobile-header-section">
+        <div class="mobile-container">
+            <div class="mobile-header">
+                <div class="mobile-logo">
+                    <img src="logonavbar.png" alt="HUNDRED" class="logo-image">
+                </div>
+                <div class="mobile-menu-toggle">
+                    <div class="hamburger-icon">
+                        <span class="bun-top"></span>
+                        <span class="meat"></span>
+                        <span class="bun-bottom"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="menu-container">
+            <!-- Menu Header -->
+            <div class="menu-header">
+                <h1>NUESTRA CARTA</h1>
+                <div class="view-toggle">
+                    <button class="toggle-btn active" data-view="grid">
+                        <i class="fas fa-th-large"></i>
+                        Cuadrícula
+                    </button>
+                    <button class="toggle-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                        Lista
+                    </button>
+                </div>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="hamburguesas">
+                    <i class="fas fa-hamburger"></i>
+                    Hamburguesas
+                </button>
+                <button class="category-tab" data-category="acompañamientos">
+                    <i class="fas fa-utensils"></i>
+                    Acompañamientos
+                </button>
+                <button class="category-tab" data-category="dulces">
+                    <i class="fas fa-birthday-cake"></i>
+                    Dulces
+                </button>
+            </div>
+
+            <!-- Menu Content -->
+            <div class="menu-content">
+                <!-- Hamburguesas Section -->
+                <div class="category-section active" id="hamburguesas">
+                    <div class="menu-grid" id="hamburguesas-grid">
+                        <!-- Cards will be populated by JavaScript -->
+                    </div>
+                    <div class="menu-list hidden" id="hamburguesas-list">
+                        <!-- List items will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Acompañamientos Section -->
+                <div class="category-section" id="acompañamientos">
+                    <div class="menu-grid" id="acompañamientos-grid">
+                        <!-- Cards will be populated by JavaScript -->
+                    </div>
+                    <div class="menu-list hidden" id="acompañamientos-list">
+                        <!-- List items will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Dulces Section -->
+                <div class="category-section" id="dulces">
+                    <div class="menu-grid" id="dulces-grid">
+                        <!-- Cards will be populated by JavaScript -->
+                    </div>
+                    <div class="menu-list hidden" id="dulces-list">
+                        <!-- List items will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="carta.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+menu
+
+Menú de Dulces
+Cheesecake de Frambuesa
+
+Precio: $5.000
+
+Cheesecake Maracuya
+
+Precio: $5.000
+
+Pie de Limón
+
+Precio: $5.000
+
+Menú de Hamburguesas
+(Nota: Cortamos las papas cada mañana. Todo incluye papas fritas rústicas.)
+Única
+
+Descripción: Inspirado en la mejor burger del mundo 2025. 180g Burger, Queso Cheddar, BBQ de Mama, Chicharron, Cebolla Caramelizada, Salsa Queso Cheddar.
+Precio: $6.000
+
+Casaldea
+
+Descripción: 180g Burger, Queso Cheddar, Lechuga Orgánica, Tomate Limachino, Cebolla Relish, Pickles, Mayo Secreta de Casa.
+Precio: $8.500
+
+Satisfacción
+
+Descripción: 2x100g Burger, Doble Queso Cheddar, Doble Chicharron, Mayo Ahumada.
+Precio: $8.500
+
+Estilo Animal
+
+Descripción: 180g Burger, Doble Queso Cheddar, Pernil, Cebolla Caramelizada.
+Precio: $8.500
+
+La Madre de Stifler
+
+Descripción: 2x100g Burger, Doble Queso Cheddar, BBQ de Mama, Chicharron, Pickles.
+Precio: $8.500
+
+Perdedor
+
+Descripción: 180g Burger, Queso Cheddar, Cebolla Caramelizada, Salsa Coreana Gochujang. (Ligeramente picante)
+Precio: $8.500
+
+Milf
+
+Descripción: (Solo 3 unidades diarias, consulta disponibilidad) 180g Burger, Queso Cheddar, Cecinabushi, Mantequilla Ahumada, Salsa de Yema de Huevo.
+Precio: $11.500
+
+Cheese
+
+Descripción: 180g Burger, Doble Queso Cheddar.
+Precio: $5.000
+
+Opción Vegetariana
+
+Descripción: Tomate Asado, Aros de Cebolla Asada, Queso Cheddar, Lechuga Orgánica, Cebolla Caramelizada, Pickles, BBQ de Mama, Mayo Ahumada.
+Precio: $5.000
+
+Burger Clásica
+
+Descripción: 180g Burger, Queso Cheddar, Lechuga, Tomate, Mayo Ahumada.
+Precio: $8.000
+
+(Extras: Extra Chicharron $1.000, Extra Burger $3.000, Extra Papas Fritas $2.000)
+Otros Pedidos Relacionados (Opcional para Hamburguesas)
+Papas Fritas Rústicas
+
+Precio: $5.000
+
+Papas Fritas Rústicas con Salsa Cheddar
+
+Precio: $6.000
+
+Papas Fritas Rústicas Supremas Casaldea
+
+Descripción: Papas Fritas, Salsa de Queso Cheddar, Tocino Souffle Crocante, Salsa de Tocino y Cilantro Decorativo.
+Precio: $8.500
+
+Chorrillanas Casaldea
+
+Descripción: Papas Fritas, Pernil, Longanizas de Chillán, Cebolla Caramelizada, 2 Huevos a la Plancha.
+Precio: $12.000
+
+Costillar a lo Pobre
+
+Descripción: Costillas de Cerdo Ahumadas Cortadas Individualmente y Cocinadas a la Parrilla. Decoradas con BBQ de Mama y Sésamo.
+Precio: $14.000
+
+Menú para Niños (Opcional)
+Menú Burger Niño
+
+Descripción: 100g Burger, Ketchup, Queso Mantecoso, Papas Fritas.
+Precio: $5.000
+
+Papas Fritas Niño
+
+Descripción: Papas Fritas, Salsa Ketchup.
+Precio: $5.000
+
+Bebidas (Opcional para Complementar)
+Bebidas
+
+Descripción: Coca Cola/Zero, Sprite, Fanta.
+Precio: $1.000
+
+Té
+
+Precio: $1.500
+
+Café
+
+Precio: $2.000
+
+Jugos Individual
+
+Precio: $2.000
